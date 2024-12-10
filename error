@@ -1,0 +1,401 @@
+ *  Executing task: C:\Users\ranga\.platformio\penv\Scripts\platformio.exe run 
+
+Processing STM32H723ZE_btt (board: marlin_STM32H723ZE; platform: ststm32@15.4.1; framework: arduino)
+------------------------------------------------------------------------------------------------------------------------------------------
+Verbose mode can be enabled via `-v, --verbose` option
+Copying variant MARLIN_H723ZE to framework directory...
+CONFIGURATION: https://docs.platformio.org/page/boards/ststm32/marlin_STM32H723ZE.html
+PLATFORM: ST STM32 (15.4.1) > STM32H723ZE (564k RAM. 512k Flash)
+HARDWARE: STM32H723ZET6 550MHz, 564KB RAM, 512KB Flash
+DEBUG: Current (cmsis-dap) External (cmsis-dap, jlink, stlink)
+PACKAGES:
+ - framework-arduinoststm32 @ 4.20200.221104 (2.2.0)
+ - framework-cmsis @ 2.50700.210515 (5.7.0)
+ - toolchain-gccarmnoneeabi @ 1.90201.191206 (9.2.1)
+Converting Marlin.ino
+LDF: Library Dependency Finder -> https://bit.ly/configure-pio-ldf
+LDF Modes: Finder ~ chain, Compatibility ~ soft
+Found 11 compatible libraries
+Scanning dependencies...
+Dependency Graph
+|-- IWatchdog @ 1.0.0
+|-- SPI @ 1.0
+|-- EEPROM @ 2.0.1
+|-- SoftwareSerial @ 1.0
+|-- Wire @ 1.0
+|-- Servo @ 1.1.2
+Building in release mode
+Compiling .pio\build\STM32H723ZE_btt\FrameworkArduinoVariant\PeripheralPins.c.o
+Compiling .pio\build\STM32H723ZE_btt\FrameworkArduinoVariant\variant_MARLIN_STM32H723ZE.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_adc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_adc_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_can.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_cec.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_comp.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_comp_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_cordic.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_cortex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_crc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_crc_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_cryp.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_cryp_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dac.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dac_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dcache.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dcmi.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dcmi_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dfsdm.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dfsdm_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dma.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dma2d.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dma_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dsi.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_dts.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_eth.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_eth_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_exti.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_fdcan.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_firewall.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_flash.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_flash_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_flash_ramfunc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_fmac.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_fmpi2c.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_fmpi2c_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_fmpsmbus.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_fmpsmbus_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_gfxmmu.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_gpio.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_gpio_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_gtzc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_hash.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_hash_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_hcd.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_hrtim.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_hsem.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_i2c.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_i2c_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_i2s.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_i2s_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_icache.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_ipcc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_irda.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_iwdg.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_jpeg.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_lcd.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_lptim.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_ltdc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_ltdc_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_mdf.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_mdios.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_mdma.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_mmc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_mmc_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_nand.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_nor.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_opamp.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_opamp_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_ospi.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_otfdec.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_pccard.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_pcd.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_pcd_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_pka.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_pssi.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_pwr.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_pwr_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_qspi.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_ramcfg.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_ramecc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_rcc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_rcc_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_rng.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_rng_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_rtc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_rtc_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_sai.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_sai_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_sd.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_sd_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_sdadc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_sdram.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_smartcard.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_smartcard_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_smbus.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_smbus_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_spdifrx.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_spi.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_spi_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_sram.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_subghz.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_swpmi.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_tim.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_tim_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_tsc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_uart.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_uart_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_usart.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_usart_ex.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\HAL\stm32yyxx_hal_wwdg.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_adc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_bdma.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_comp.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_cordic.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_crc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_crs.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_dac.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_delayblock.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_dlyb.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_dma.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_dma2d.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_exti.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_fmac.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_fmc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_fmpi2c.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_fsmc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_gpio.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_hrtim.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_i2c.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_icache.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_lpgpio.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_lptim.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_lpuart.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_mdma.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_opamp.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_pka.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_pwr.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_rcc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_rng.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_rtc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_sdmmc.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_spi.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_swpmi.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_tim.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_ucpd.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_usart.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_usb.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\LL\stm32yyxx_ll_utils.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\PortNames.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\analog.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\bootloader.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\clock.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\core_callback.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\dwt.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\hw_config.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\interrupt.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\otp.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\pinmap.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\stm32_def.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\system_stm32yyxx.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\timer.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\stm32\uart.c.o
+Compiling .pio\build\STM32H723ZE_btt\SrcWrapper\src\syscalls.c.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\HAL.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\HAL_SPI.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\MarlinSPI.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\MarlinSerial.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\MinSerial.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\Servo.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_bl24cxx.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_flash.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_if_iic.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_sdcard.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_sram.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_wired.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\fast_pwm.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\fastio.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\msc_sd.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\sdio.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\timers.cpp.o
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\HAL.cpp:26:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\usb_host.cpp.o
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\STM32\usb_serial.cpp.o
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\MarlinSerial.cpp:27:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\HAL_SPI.cpp:26:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\eeprom_bl24cxx.cpp:32:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\shared\Delay.cpp.o
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\Servo.cpp:26:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\shared\HAL.cpp.o
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\eeprom_flash.cpp:26:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\eeprom_if_iic.cpp:32:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\shared\MinSerial.cpp.o
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\eeprom_sdcard.cpp:31:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\eeprom_sram.cpp:26:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\eeprom_wired.cpp:26:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\shared\backtrace\backtrace.cpp.o
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\fast_pwm.cpp:27:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\fastio.cpp:26:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\sdio.cpp:27:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\timers.cpp:26:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+Compiling .pio\build\STM32H723ZE_btt\src\src\HAL\shared\backtrace\unwarm.cpp.o
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\HAL.cpp.o] Error 1
+In file included from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\STM32\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\STM32\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\STM32\usb_host.cpp:27:
+Marlin\src\HAL\STM32\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"     
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\MarlinSerial.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\HAL_SPI.cpp.o] Error 1
+In file included from Marlin\src\HAL\shared\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\shared\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\shared\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\shared\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\shared\Delay.cpp:25:
+Marlin\src\HAL\shared\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"    
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_flash.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_bl24cxx.cpp.o] Error 1
+In file included from Marlin\src\HAL\shared\../../core/../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\shared\../../core/../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\shared\../../core/../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\shared\../../core/../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\shared\../../core/serial.h:24,
+                 from Marlin\src\HAL\shared\MinSerial.h:24,
+                 from Marlin\src\HAL\shared\MinSerial.cpp:22:
+Marlin\src\HAL\shared\../../core/../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\Servo.cpp.o] Error 1
+In file included from Marlin\src\HAL\shared\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\shared\../../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\shared\../../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\shared\../../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\shared\HAL.cpp:27:
+Marlin\src\HAL\shared\../../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_sdcard.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_sram.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_if_iic.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\eeprom_wired.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\fast_pwm.cpp.o] Error 1
+In file included from Marlin\src\HAL\shared\backtrace\../../../core/../inc/../pins/stm32f4/pins_BTT_OCTOPUS_V1_common.h:24,
+                 from Marlin\src\HAL\shared\backtrace\../../../core/../inc/../pins/stm32f4/pins_BTT_OCTOPUS_PRO_V1_0.h:44,
+                 from Marlin\src\HAL\shared\backtrace\../../../core/../inc/../pins/pins.h:692,
+                 from Marlin\src\HAL\shared\backtrace\../../../core/../inc/MarlinConfig.h:36,
+                 from Marlin\src\HAL\shared\backtrace\../../../core/serial.h:24,
+                 from Marlin\src\HAL\shared\backtrace\../MinSerial.h:24,
+                 from Marlin\src\HAL\shared\backtrace\backtrace.cpp:28:
+Marlin\src\HAL\shared\backtrace\../../../core/../inc/../pins/stm32f4/env_validate.h:26:4: error: #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+   26 |   #error "Oops! Select an STM32F4 board in 'Tools > Board.'"
+      |    ^~~~~
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\fastio.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\sdio.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\timers.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\STM32\usb_host.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\shared\Delay.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\shared\MinSerial.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\shared\HAL.cpp.o] Error 1
+*** [.pio\build\STM32H723ZE_btt\src\src\HAL\shared\backtrace\backtrace.cpp.o] Error 1
+====================================================== [FAILED] Took 10.71 seconds ======================================================
+
+Environment      Status    Duration
+---------------  --------  ------------
+STM32H723ZE_btt  FAILED    00:00:10.709
+================================================= 1 failed, 0 succeeded in 00:00:10.709 ================================================= 
+
+ *  The terminal process "C:\Users\ranga\.platformio\penv\Scripts\platformio.exe 'run'" terminated with exit code: 1. 
+ *  Terminal will be reused by tasks, press any key to close it. 
